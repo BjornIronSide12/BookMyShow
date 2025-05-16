@@ -1,32 +1,13 @@
 package com.bookmyshow.models;
 
 
-public class ShowSeatType {
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class ShowSeatType extends BaseModel{
     private Show show;
     private SeatType seatType;
     private double price;
-
-    public Show getShow() {
-        return show;
-    }
-
-    public void setShow(Show show) {
-        this.show = show;
-    }
-
-    public SeatType getSeatType() {
-        return seatType;
-    }
-
-    public void setSeatType(SeatType seatType) {
-        this.seatType = seatType;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
 }

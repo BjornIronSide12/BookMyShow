@@ -1,32 +1,13 @@
 package com.bookmyshow.models;
 
-public class ShowSeat {
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class ShowSeat extends BaseModel{
     private Show show;
     private Seat seat;
+    private ShowSeatStatus showSeatStatus;
 
-    public Show getShow() {
-        return show;
-    }
-
-    public void setShow(Show show) {
-        this.show = show;
-    }
-
-    public Seat getSeat() {
-        return seat;
-    }
-
-    public void setSeat(Seat seat) {
-        this.seat = seat;
-    }
-
-    public Status getStatus() {
-        return status;
-    }
-
-    public void setStatus(Status status) {
-        this.status = status;
-    }
-
-    private Status status;
 }

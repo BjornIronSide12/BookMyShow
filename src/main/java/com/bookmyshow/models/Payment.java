@@ -1,9 +1,14 @@
 package com.bookmyshow.models;
 
-public class Payment {
-    private int id;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class Payment extends BaseModel{
     private Provider provider;
-    private int referenceNumber;
-    private Status status;
+    private String referenceNumber;
+    private PaymentStatus paymentStatus;
     private double amount;
 }

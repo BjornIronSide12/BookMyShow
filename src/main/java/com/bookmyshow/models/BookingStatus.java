@@ -1,7 +1,6 @@
 package com.bookmyshow.models;
 
-public enum Status {
+public enum BookingStatus {
     CONFIRMED,
-    CANCELLED,
-    FAILED
+    CANCELLED
 }
